@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11329" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:27 ICT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11329" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:27 ICT">
+      <class name="com.tokopedia.search.SearchTokped">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="setup" is-config="true" duration-ms="6240" started-at="2022-08-24T11:20:09 ICT" finished-at="2022-08-24T11:20:15 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="search()[pri:1, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="search" duration-ms="687" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:16 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="scrolling()[pri:2, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="scrolling" duration-ms="10569" started-at="2022-08-24T11:20:16 ICT" finished-at="2022-08-24T11:20:27 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrolling -->
+      </class> <!-- com.tokopedia.search.SearchTokped -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
