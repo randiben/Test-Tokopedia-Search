@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11329" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:27 ICT">
+  <suite name="Default suite" duration-ms="17922" started-at="2022-08-25T02:07:24 ICT" finished-at="2022-08-25T02:07:42 ICT">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tokopedia.runner.RunnerFile@13c27452]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="11329" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:27 ICT">
-      <class name="com.tokopedia.search.SearchTokped">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="setup" is-config="true" duration-ms="6240" started-at="2022-08-24T11:20:09 ICT" finished-at="2022-08-24T11:20:15 ICT">
+    <test name="Default test" duration-ms="17922" started-at="2022-08-25T02:07:24 ICT" finished-at="2022-08-25T02:07:42 ICT">
+      <class name="com.tokopedia.runner.RunnerFile">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.tokopedia.runner.RunnerFile@13c27452]" name="setUpClass" is-config="true" duration-ms="939" started-at="2022-08-25T02:07:24 ICT" finished-at="2022-08-25T02:07:25 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5633dafd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="search()[pri:1, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="search" duration-ms="687" started-at="2022-08-24T11:20:15 ICT" finished-at="2022-08-24T11:20:16 ICT">
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.tokopedia.runner.RunnerFile@13c27452]" name="runScenario" duration-ms="16842" started-at="2022-08-25T02:07:25 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-25T02:07:42 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test menu search on tokopedia and count result product displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Tokopedia Search]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [60] but found [80]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [60] but found [80]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at com.tokopedia.search.SearchTokped.validate_total_product_displayed(SearchTokped.java:59)
+at ✽.Validate total product displayed(file:///C:/Users/Ben/eclipse-workspace/TokopediaTest/src/test/resources/features/SearchTokped.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="scrolling()[pri:2, instance:com.tokopedia.search.SearchTokped@4abdb505]" name="scrolling" duration-ms="10569" started-at="2022-08-24T11:20:16 ICT" finished-at="2022-08-24T11:20:27 ICT">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.tokopedia.runner.RunnerFile@13c27452]" name="tearDownClass" is-config="true" duration-ms="78" started-at="2022-08-25T02:07:42 ICT" finished-at="2022-08-25T02:07:42 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrolling -->
-      </class> <!-- com.tokopedia.search.SearchTokped -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.tokopedia.runner.RunnerFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

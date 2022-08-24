@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 24 11:20:15 ICT 2022</td>
+<td>Started on:</td><td>Thu Aug 25 02:07:24 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11329 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17922 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,23 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tokopedia.search.SearchTokped.scrolling()'><b>scrolling</b><br>Test class: com.tokopedia.search.SearchTokped</td>
-<td></td>
-<td>10</td>
-<td>com.tokopedia.search.SearchTokped@4abdb505</td></tr>
-<tr>
-<td title='com.tokopedia.search.SearchTokped.search()'><b>search</b><br>Test class: com.tokopedia.search.SearchTokped</td>
-<td></td>
-<td>0</td>
-<td>com.tokopedia.search.SearchTokped@4abdb505</td></tr>
+<td title='com.tokopedia.runner.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: com.tokopedia.runner.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test menu search on tokopedia and count result product displayed", "Optional[Tokopedia Search]"</td>
+<td><div><pre>java.lang.AssertionError: expected [60] but found [80]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.tokopedia.search.SearchTokped.validate_total_product_displayed(SearchTokped.java:59)
+	at ?.Validate total product displayed(file:///C:/Users/Ben/eclipse-workspace/TokopediaTest/src/test/resources/features/SearchTokped.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace357291163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace357291163'><pre>java.lang.AssertionError: expected [60] but found [80]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.tokopedia.search.SearchTokped.validate_total_product_displayed(SearchTokped.java:59)
+	at ?.Validate total product displayed(file:///C:/Users/Ben/eclipse-workspace/TokopediaTest/src/test/resources/features/SearchTokped.feature:8)
+</pre></div></td>
+<td>16</td>
+<td>com.tokopedia.runner.RunnerFile@13c27452</td></tr>
 </table><p>
 </body>
 </html>
